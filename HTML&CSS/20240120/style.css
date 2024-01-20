@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Open Sans', sans-serif;    
+}
+
+a{
+    text-decoration: none;
+}
+
+.pt-2{
+    padding-top: 2rem;
+}
+
+.pb-1{
+    padding-bottom: 1rem;
+}
+
+.pb-2{
+    padding-bottom: 2rem;
+}
+
+ul{
+    list-style: none;
+}
+
+.texto-al-centro{
+    text-align: center;
+}
+
+.boton{
+    border:none;
+    border-radius: 5px;
+    padding:1rem 2rem;
+    background-color: #262829;
+    color:whitesmoke;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.boton:hover{
+    background-color:whitesmoke ;
+    color:#262829;
+    outline:1px solid #262829;
+}
+
+header{
+    outline:1px solid #DCDFE1;
+    padding: 1rem 0;
+    background-color: #EAEFF1;
+}
+
+.nombre-sitio{
+    font-style: italic;
+}
+
+.fila,
+.fila-nav{
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    margin:auto;
+}
+
+.columna-4{
+    flex-basis: 33%;
+}
+
+.columna-6{
+    flex-basis: 50%;
+}
+
+.columna-8{
+    flex-basis: 67%;
+}
+
+.columna-12{
+    flex-basis: 100%;
+}
+
+.titular{
+   padding-top:3rem;
+   height:90vh;
+   background-color: #CFDAE1;
+}
+
+/* Informacion de la Cabecera*/
+.info-titular
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:2rem;
+    margin-top:2.5rem;
+}
+
+.titulo-conferencia{
+    font-size:30pt;
+}
+
+.cuenta-regresiva
+{
+    width:100%;
+    display: flex;
+    gap:1rem;
+}
+
+.seccion-cuenta
+{
+    text-align: center;
+}
+
+.seccion-cuenta > label
+{
+    font-size: 9pt;
+}
+
+.cantidad-cuenta
+{
+    outline: 1px solid #456;
+    border:none;
+    border-radius:5px;
+    width:50px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cantidad-cuenta h5{
+    font-size: 18pt;
+}
+
+/* Tarjeta de Contacto*/
+.tarjeta
+{
+    height:100%;
+    width:430px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E8EEF1;
+}
+
+.tarjeta .marco-video
+{
+    height:300px;
+    width:100%;
+    background-image: url('images/header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tarjeta .formulario-contacto
+{
+    height:300px;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-formulario,
+.campo-formulario,
+.boton-formulario
+{
+    display:block;
+}
+
+.texto-formulario
+{
+    font-size: 11pt;
+    font-weight: 600;
+    margin-top:1rem;
+}
+
+.campo-formulario,
+.boton-formulario
+{
+    width:100%;
+    height:3rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.campo-formulario{
+    margin-top: 0.2rem;
+    padding-left:10px;
+}
+
+.campo-formulario:hover{
+    outline:1px solid #244C66;
+}
+
+.campo-formulario:focus{
+    outline:1px solid #244C66;
+}
+
+.boton-formulario
+{
+    font-size: 11pt;
+    font-weight: 600;
+    margin-top:2rem;
+    width:100%;
+    background-color: #244C66;
+    color:whitesmoke;
+    cursor: pointer;
+}
+
+.boton-formulario:hover{
+    background-color: whitesmoke;
+    color:#244C66;
+    outline: 1px solid #244C66;
+}
+
+/* Beneficios */
+.beneficios{    
+   padding-top:3rem;
+}
+
+.titulo-beneficios{
+    text-align: center;
+}
+
+.acapite-beneficios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+}
+
+.acapite-beneficios > .circulo{
+    width:100px;
+    height:100px;
+    background-color: #CFDAE1;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acapite-beneficios > p{
+    font-size: 10pt;
+    margin: 0 3rem;
+    text-align: center;
+}
+
+/* Horario */
+.horario{    
+    background-color: #CFDAE1;
+}
+
+.desc-horario
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:2rem;
+}
+
+.lista-horas{
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+}
+
+.lista-horas li{
+    display: flex;
+    gap:1rem;
+}
+
+.txt-hora{
+    font-weight: 700;    
+    border:none;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    outline: 1px solid #262829;
+    padding:0.2rem 0.3rem;
+}
+
+.hora,
+.lista-horas li span h5{
+    font-size:12pt;
+}
+
+.lista-horas li span p{
+    font-size:10pt;
+}
+
+/* Expositores */
+.tarjeta-expositor{
+    width:80%;
+    height:200px;
+    display: flex;
+    gap:1rem;
+    margin: 0 auto;
+}
+
+.imagen-expositor{
+    width:150px;
+    height:150px;
+}
+
+.imagen-expositor img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info-expositor{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.info-expositor h4{
+    font-size: 16pt;
+}
+
+.info-expositor p{
+    font-size: 10pt;
+}
+
+/* Pie de la pagina */
+.pie{
+    background-color: #EAEFF1;
+}
+
+.llamada-accion{
+    background-color: #CFDAE1;
+}
+
+.info-llamada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1.5rem;
+    width:70%;
+    margin: 0 auto;
+}
+
+@media (max-width:768px)
+{
+    .fila{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+        margin:0 auto;
+    }
+
+    .columna-6{
+        flex-basis: 100%;
+    }
+
+    .titular{
+        height:100%;
+    }
+
+    .lista-horas li span.hora{
+        flex-basis: 30%;
+    }
+    .lista-horas li span.topico{
+        flex-basis: 70%;
+    }
+}
