@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">            
+            <div class="navbar-row">
+                <h1 class="site-title"><i class="fa-solid fa-book icono"></i>Tecnolibros</h1>
+                <span class="header-menu">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </span>
+            </div>            
+        </nav>
+        <div class="header-content">
+            <div class="row">
+                <div class="column">
+                    <div class="presentation">
+                        <h2>Puesta en Circulación del Nuevo Hit de Simon Bridges</h2>
+                        <p>El más célebre experto en Minería de Datos lanzará el compendio más completo del que es considerado como el campo más rápido en crecimiento de las últimas décadas.</p>
+                        <a href="#" class="btn">
+                            <i class="fa-solid fa-download icono"></i>Descargar Aquí
+                        </a>      
+                    </div>                   
+                </div>
+                <div class="column">
+                    <img src="images/book.jpg" alt="">                        
+                </div>
+            </div> 
+        </div>
+    </header>
+    <main>
+        <section class="book-content">
+            <div class="row">
+                <div class="column">
+                    <div class="book-header">
+                        <h3>Contenido del Libro</h3>
+                        <p>Descubre los hallazgos y conceptos más importantes<br/>en una presentación fácil de entender y seguir.</p>
+                        <div class="book-sample">
+                            <div class="chapter-list">
+                                <ul class="chapter-bar">
+                                    <li onclick="Highlight('chapter-1','chapter-card-1');" class="chapter current" id="chapter-1">
+                                        <i class="fa-solid fa-book-bookmark icono"></i>
+                                        <span>Capítulo Uno</span>
+                                    </li>
+                                    <li onclick="Highlight('chapter-2','chapter-card-2');" class="chapter" id="chapter-2">
+                                        <i class="fa-solid fa-book-bookmark icono"></i>
+                                        <span>Capítulo Dos</span>
+                                    </li>
+                                    <li onclick="Highlight('chapter-3','chapter-card-3');" class="chapter" id="chapter-3">
+                                        <i class="fa-solid fa-book-bookmark icono"></i>
+                                        <span>Capítulo Tres</span>
+                                    </li>
+                                    <li onclick="Highlight('chapter-4','chapter-card-4');" class="chapter" id="chapter-4">
+                                        <i class="fa-solid fa-book-bookmark icono"></i>
+                                        <span>Capítulo Cuatro</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="chapter-sample">
+                                <div class="chapter-card visible" id="chapter-card-1">
+                                    <div class="chapter-text">
+                                        <h4>Introducción</h4>
+                                        <p>Contexto en el que se dieron las condiciones para el inicio del Desarrollo de la Minería de Datos</p>
+                                    </div>
+                                    <div class="chapter-image">
+                                        <img src="images/book.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="chapter-card hidden" id="chapter-card-2">
+                                    <div class="chapter-text">
+                                        <h4>Estadísticas</h4>
+                                        <p>Los primeros modelados estadísticos y predicciones de tendencias a través de su uso.</p>
+                                    </div>
+                                    <div class="chapter-image">
+                                        <img src="images/book.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="chapter-card hidden" id="chapter-card-3">
+                                    <div class="chapter-text">
+                                        <h4>Revolución</h4>
+                                        <p>A 50 años de sus inicios su uso llegó al punto de detectar incidencias futuras de revoluciones en países.</p>
+                                    </div>
+                                    <div class="chapter-image">
+                                        <img src="images/book.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="chapter-card hidden" id="chapter-card-4">
+                                    <div class="chapter-text">
+                                        <h4>Integración con IA</h4>
+                                        <p>Recorrido a través del tiempo de la integración de la Inteligencia Artificial en la Minería de Datos</p>
+                                    </div>
+                                    <div class="chapter-image">
+                                        <img src="images/book.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript">
+        function Highlight(id,id_card){
+            const chapters = document.querySelectorAll(".chapter");
+            const chapter_cards = document.querySelectorAll(".chapter-card");
+
+            chapters.forEach(chapter => chapter.classList.remove('current'));
+            chapter_cards.forEach(chapter_card => chapter_card.classList.replace('visible','hidden'));
+
+            document.querySelector(`#${id}`).classList.add('current');
+            document.querySelector(`#${id_card}`).classList.replace('hidden','visible');
+        }
+    </script>
+</body>
+</html>
