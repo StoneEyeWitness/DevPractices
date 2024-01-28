@@ -17,8 +17,10 @@ a{
 .row,
 .navbar-row,
 .column{
-    height: 100%;
     display: flex;
+    justify-content: space-between;
+    width:90%;
+    margin:auto;
 }
 
 
@@ -49,12 +51,6 @@ a{
     margin-right:5px;
 }
 
-.header{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
 .navbar{
     padding:1rem 2rem;
 }
@@ -68,8 +64,13 @@ a{
 }
 
 .header-content{
-    height:95vh;
+    height:95dvh;
     background-color: #ede8fb;
+}
+
+
+.header > * {
+    height:100%;
 }
 
 .presentation{
@@ -78,16 +79,18 @@ a{
     align-items: flex-start;
     flex-direction: column;
     gap:2rem;
-    margin-top:5rem;
+    padding: 5rem;
+    flex: 1;
 }
+
 
 .presentation h2{
     font-size:48pt;
 }
 
-img{
-    max-width: 100%;
-    object-fit: cover;
+.header-image{
+    width:700px;
+    height:500px;
 }
 
 .book-content{
@@ -175,6 +178,10 @@ li.current{
     padding:1rem;
 }
 
+.chapter-image img{
+    max-width: 100%;
+}
+
 .chapter-text h4{
     font-size:16pt;
 }
@@ -193,23 +200,27 @@ li.current{
 }
 
 @media(max-width:768px){
-    .column{
-        width:100%;
-    }
-    .row, .chapter-card{
+   .row,
+   .column,
+   .chapter-card{
         flex-direction: column-reverse;
-    }
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+        margin:0 auto;
+   }
 
-    .chapter-list, .chapter-sample{
-        flex-basis: 50%;
-    }
-    
-    .chapter-bar, .chapter-card{
-        margin:0 1rem;
-    }
+   .chapter-list,
+   .chapter-sample{
+    flex-basis: 50%;
+   }
 
-    .presentation{
-        padding-bottom:1rem;
-    }
-    
+   .charter-bar,
+   .chapter-card{
+    margin: 0 auto;
+   }
+
+   .chapter-sample{
+        padding: 0 2rem;
+   }
 }
