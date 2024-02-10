@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.fondo-1{
+    background-color: #f1f1f1;
+}
+
+ul{
+    list-style: none;   
+}
+
+a{
+    text-decoration: none;
+}
+
+.boton{
+    padding:1.5rem 3rem;
+    border-radius: 10px;
+    margin: 0 1rem;
+}
+
+.boton-negro{
+    background-color: #333;
+    color:#fff;
+}
+
+.boton-negro:hover{
+    color:#333;
+    background-color:#f1f1f1;
+    outline: 1px solid #333;
+}
+
+.boton-blanco{
+    background-color:#fff;
+    color: #333;
+}
+
+.boton-blanco:hover{
+    background-color:#333;
+    color:#fff;
+    outline: 1px solid #fff;
+}
+
+ul li{
+    display: inline-block;
+}
+
+.barra-cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.logo, .barra-navegacion{
+    margin:0 2rem;
+}
+
+.logo{
+    font-style:italic;
+    font-size:20pt;
+}
+
+.barra-navegacion ul li{
+    font-size: 20pt;
+}
+
+.barra-navegacion ul li i:hover{
+    color: rgb(123, 122, 122);
+}
+
+.contenido-cabecera{
+    height:100dvh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+    text-align: center;
+    color:#fff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('images/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenido-cabecera h2{
+    font-size:28pt;
+}
+
+.proposito-taller{
+    height:200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.proposito-taller h3{
+    margin: 0 2rem;
+}
+
+.agenda-taller{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    padding:1.5rem 0;
+}
+
+.cuota-taller,
+.instructor-taller,
+.contacto-empresa{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    padding: 2rem 0;
+}
+
+.agenda-taller h3,
+.testimonios-taller h3,
+.cuota-taller h3,
+.instructor-taller h3,
+.contacto-empresa h3{
+    font-size:24pt;
+    text-align: center;
+}
+
+.agenda-taller > p{
+    font-size: 10pt;
+    margin:0 5rem;
+    text-align: center;
+}
+
+.puntos-taller{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:0.2rem;
+    padding: 0 1rem;
+}
+
+
+.puntos-taller .punto{
+    flex-basis: 33%;
+    display: flex;
+    gap:1.5rem;
+}
+
+.numero-punto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numero-punto span{
+    background-color: #f1f1f1;
+    border-radius:50%;
+    padding:1rem 1.2rem;
+    font-weight: 700;
+}
+
+.contenido-punto{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin:1rem 0;
+}
+
+.contenido-punto p{
+    font-size:10pt;
+}
+
+.testimonios-taller{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    padding: 2rem 0;
+}
+
+.imagen-cita{
+    width:150px;
+    height:150px;
+    background-color:#333;
+    border-radius: 50%;
+}
+
+.citas-testimonios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1.5rem;
+}
+
+.cita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:1.5rem;
+}
+
+.participante-cita strong{
+    font-size:11pt;
+}
+
+.participante-cita p{
+    font-size:10pt;
+}
+
+.formulario-cuota input{
+    padding:1rem;
+}
+
+.cuota-taller p
+{
+    font-size: 10pt;
+    text-align: center;
+}
+
+.instructor-taller{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    padding: 2rem 0;
+}
+
+.imagen-instructor{
+    width:250px;
+    height:250px;
+    background-color:#333;
+    border-radius: 50%;
+}
+
+.nombre-instructor
+{
+    font-size:20pt;
+}
+.resena-instructor{
+    font-size:11pt;
+    margin: 0 2rem;
+    text-align: justify;
+}
+
+footer{
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
