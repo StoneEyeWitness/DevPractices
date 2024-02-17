@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.icono{
+    margin-right:5px;
+}
+
+.fila{
+    display: flex;
+}
+
+.contenedor{
+    width:95%;
+    margin:0 auto;
+}
+
+.boton{
+    padding:1rem 2rem;
+}
+
+.boton-negro{
+    color:rgb(255, 255, 255);
+    background-color: #151313;
+}
+
+.boton-negro:hover{
+    color: #151313;
+    background-color:rgb(255, 255, 255);
+    outline:1px solid#151313;
+    transition: all 0.5s ease;
+}
+
+.barra-navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.barra-navegacion > ul {
+    list-style: none;
+    display: flex;
+}
+
+
+.barra-navegacion > ul li{
+    display: inline-block;
+}
+
+.barra-navegacion > h2,
+.barra-navegacion > ul li a{
+    color:#151313;
+    padding:1rem;
+    font-weight: 500;
+}
+
+.barra-navegacion > ul li a:hover{
+    color:#e1a091;
+    background-color: #151313;
+    transition: all 0.5s ease;
+}
+
+.banner-competencia{
+    height:93dvh;
+    background-color: #fcc8bd;
+}
+
+.banner-competencia > *,
+.banner-competencia .fila > *{
+    height:100%;
+}
+
+.texto-banner{
+    flex-basis:40%;
+}
+
+.texto-banner > *{
+    height:100%;
+}
+
+.texto-banner h1{
+    font-size: 36pt;
+}
+
+.texto-banner .contenedor{    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding:1rem;
+    gap:2rem;
+}
+
+.imagen-banner{
+    flex-basis:60%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('images/header-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width:431px)
+{
+    .barra-navegacion > ul {
+        gap:0;
+    }
+    .barra-navegacion > h1,
+    .barra-navegacion > ul li a{
+        color:#151313;
+        padding:0.2rem;
+    }
+
+    .texto-enlace-barra{
+        display: none;
+    }
+}
+
+@media(max-width:768px)
+{
+    .banner-competencia .fila
+    {
+        flex-direction: column-reverse;
+    }
+
+    .banner-competencia > .fila > *
+    {
+        padding:2rem 0;
+    }
+
+    .logo > i{
+        margin-right:5px;
+    }
+
+    .icono{
+        margin:0;
+    }
+
+    .barra-navegacion h2,
+    .barra-navegacion ul{
+        text-align: center;
+    }
+
+    .barra-navegacion ul li a{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+}
