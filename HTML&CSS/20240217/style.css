@@ -8,6 +8,8 @@
 
 body{
     font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 a{
@@ -82,6 +84,11 @@ a{
     height:100%;
 }
 
+.caja{
+    width: 150px;
+    height:150px;
+}
+
 .texto-banner{
     flex-basis:40%;
 }
@@ -125,11 +132,16 @@ a{
     .texto-enlace-barra{
         display: none;
     }
+    
+    .banner-competencia > .fila
+    {
+        flex-direction: column-reverse;
+    }
 }
 
-@media(max-width:768px)
+@media(min-width:432px) and (max-width:768px)
 {
-    .banner-competencia .fila
+    .banner-competencia > .fila
     {
         flex-direction: column-reverse;
     }

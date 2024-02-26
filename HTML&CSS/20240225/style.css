@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    padding:1rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color:#000;
+}
+
+ul li:hover{
+    background-color:rgb(135, 169, 203);
+}
+
+.icono{
+    margin-right: 5px;
+}
+
+.contenedor{
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.fila{
+    display: flex;
+}
+
+.columna-3{
+    flex-basis: 25%;
+}
+
+.columna-6{
+    flex-basis: 50%;
+}
+
+.columna-4{
+    flex-basis: 33.333%;
+}
+
+.columna-9{
+    flex-basis: 66.666%;
+}
+
+.fondo-2{    
+    background-color:rgb(135, 169, 203);
+}
+
+.cabecera .fila,
+.pie, .fila{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecera h1{
+    font-style: italic;    
+}
+
+.banner{
+    height:93dvh;
+}
+
+.banner > *,
+.banner > .fila > *{
+    height: 100%;
+}
+
+.imagen-banner{
+    display: flex;
+} 
+
+.imagen-banner > img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.fila>.columna-6>.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:1rem;
+}
+
+.fila>.columna-6>.contenedor h2{
+    margin-top: 2rem;
+    font-size: 48pt;
+}
+
+.fila>.columna-6>.contenedor h3{
+    font-size: 24pt;
+}
+
+.fila>.columna-6>.contenedor p{
+    font-size: 14pt;
+}
+
+.informacion-curso>.contenedor,
+.modulos-curso>.contenedor,
+.instructor-curso>.contenedor,
+.testimonios-curso>.contenedor,
+.formulario-inscripcion>.contenedor{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    padding:4rem 0;
+}
+
+.modulos-curso>.contenedor>.fila:first-child,
+.testimonios-curso>.contenedor>.fila:first-child,
+.formulario-inscripcion>.contenedor>.fila{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1.5rem;
+}
+
+.caja-curso{
+    max-width:95%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+}
+
+.caja-curso h3,
+.modulos-curso>.contenedor>.fila:first-child h3,
+.testimonios-curso>.contenedor>.fila:first-child h3,
+.info-instructor h3,
+.formulario-inscripcion>.contenedor>.fila h3{
+    font-size:24pt;
+}
+
+.caja-modulo{
+    width:300px;
+    margin:0 auto;
+    padding:4rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    background-color: #d1d1d1;
+    cursor: pointer;
+}
+
+.caja-modulo:hover{
+    background-color:#870;
+}
+
+.caja-modulo i{
+    font-size:36pt;
+}
+
+.caja-modulo h5{
+    font-size:24pt;
+}
+
+.instructor-curso>.contenedor .fila{
+    align-items: flex-start;
+}
+
+.info-instructor{
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    margin:0 auto;
+}
+
+.caja-instructor{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    margin:0 auto;
+}
+
+.imagen-instructor{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.imagen-instructor img{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.caja-testimonios{
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    margin:0 auto;
+    background-color: #d1d1d1;
+    padding:2rem;
+}
+
+.estudiante-testimonio{
+    display: flex;
+    gap:1rem;
+}
+
+.imagen-estudiante{
+    width:60px;
+    height:50px;
+    border-radius: 50%;
+    margin:0 auto;
+    display: flex;
+}
+
+.imagen-estudiante img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.campo-formulario{
+    padding:1rem 5rem;
+}
+
+.campo-formulario::placeholder{
+    font-style: italic;
+    font-size: 1em;
+    color: mintcream;
+    background: thistle;
+    padding: 10px;
+}
+
+.boton{
+    padding: 1rem 2rem;
+    border:none;
+    background-color:#870;
+    font-weight:700;
+}
+
+.boton:hover{
+    color:#333;
+    background-color:#d1d1d1;
+    outline: 1px solid #870;
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+    .fila{
+        flex-direction: column;
+        gap:1rem;
+    }
+}
