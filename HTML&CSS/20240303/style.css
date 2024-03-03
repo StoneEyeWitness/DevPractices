@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-fondo: #456;
+    --color-secundario: rgb(216, 216, 216);
+    --color-primario-texto: #000;
+    --color-secundario-texto: #e1e1e8;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.fondo-2{
+    background-color: var(--color-secundario);
+}
+
+a{
+    text-decoration: none;
+    color:var(--color-primario-texto);
+}
+
+ul{
+    list-style: none;
+}
+
+.texto-al-centro{
+    text-align: center;
+}
+
+.texto-cursiva{
+    font-style: italic;
+}
+
+.contenedor-95{
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.contenedor-85{
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.contenedor-75{
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.fila,
+.flex{
+    display: flex;
+}
+
+.flex-between{
+    justify-content: space-between;
+}
+
+.flex-columna{
+    flex-direction: column;
+}
+
+.flex-alineado-inicio{
+    align-items: flex-start;
+}
+
+.flex-alineado-centro{
+    align-items: center;
+}
+
+.flex-centro{
+    align-items: center;
+    justify-content: center;
+}
+
+.brecha-1-rem{
+    gap:1rem;
+}
+
+.brecha-1-5-rem{
+    gap:1.5rem;
+}
+
+.brecha-2-rem{
+    gap:2rem;
+}
+
+.espacio-relleno-2{
+    padding:2rem 0;
+}
+
+.cubierta-relleno-1{
+    padding:1.5rem;
+}
+
+.columna-3{
+    flex-basis: 25%;
+}
+
+.columna-4{
+    flex-basis: 33.333%;
+}
+
+.columna-9{
+    flex-basis: 75%;
+}
+
+.margen-derecho-2{
+    margin-right: 5rem;
+}
+
+.barra-navegacion > ul > li{
+    display: inline-block;
+    margin-right:5px;
+    padding:1rem;
+}
+
+.barra-navegacion > ul > li:hover{
+    background-color: var(--color-fondo);
+}
+
+.barra-navegacion > ul > li a:hover{
+    color: #e1e1e8;
+}
+
+.imagen-testimonio,
+.imagen-testigo{
+    background-color: var(--color-fondo);
+}
+
+.imagen-testimonio{
+    width:100%;
+    height:50vh;
+}
+
+.imagen-testigo-1{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-color: var(--color-fondo);
+}
+
+.numero{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-color:  var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-testigo-2{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: var(--color-fondo);
+}
+
+.icono-beneficio{
+    width:80px;
+    height:50px;
+    border-radius: 50%;
+    background-color: var(--color-fondo);
+}
+
+.seccion-campo{
+    display: flex;
+    flex-direction: column;
+    gap:0.2rem;
+}
+
+.seccion-campo label{
+    font-size: 10pt;
+    font-weight: 500;
+}
+
+.campo-formulario{
+    padding:0.7rem;
+}
+
+.boton{
+    padding:1rem 3rem;
+    border:none;
+    display: block;
+    background-color: var(--color-fondo);
+    color:var(--color-secundario-texto);
+
+}
+
+.caja-beneficio{
+    width:100%;
+    height:10rem;
+}
+
+.desc-beneficio{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+
+@media (max-width:1100px){
+    .fila{
+        flex-direction: column;
+    }
+}
