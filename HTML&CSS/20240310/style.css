@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-fondo: rgb(249, 196, 214);
+    --color-fondo-2: rgb(249, 145, 180);
+
+    --color-texto:#1e1e1e;
+
+    --fondo-boton: #665390;
+    --texto-boton: #e3e3e3;
+
+    --fondo-boton-2: #d7ccf0;
+    --texto-boton-2: #383838;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--color-fondo);
+}
+
+section{
+    padding:2rem 0;
+}
+
+.fondo-2{
+    background-color: var(--color-fondo-2);
+}
+
+h1,h2,h3,h4,a,p{
+    color:var(--color-texto);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.contenedor{
+    max-width: 95%;
+    margin:0 auto;
+}
+
+.fila{
+    display: flex;
+}
+
+.columna-4{
+    flex-basis: 33.333%;
+}
+
+.columna-6{
+    flex-basis: 50%;
+}
+
+.espacio-entremedio{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icono{
+    margin-right: 5px;
+}
+
+.boton{
+    border: none;
+    padding:1rem 2rem;
+}
+
+.boton-1{
+    background-color: var(--fondo-boton);
+    color: var(--texto-boton);
+    text-transform: uppercase;
+}
+
+.boton-2{
+    background-color: var(--fondo-boton-2);
+    color: var(--texto-boton-2);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.cabecera{
+    padding:0.5rem 0;
+}
+
+.barra-navegacion> ul li{
+    display: inline-block;
+    padding:1rem;
+}
+
+
+.banner-prueba .fila,
+.imagen-empresa .fila,
+.descripcion-planes .fila,
+.testimonio-cliente .fila{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:1rem;
+}
+
+.espacio-imagen{
+    max-width:800px;
+    height:90dvh;
+    display: flex;
+    background-color: var(--color-fondo-2);
+    opacity: 0.8;
+}
+
+.espacio-imagen img{
+    max-width: 100%;
+    object-fit: cover;    
+}
+
+.caja-componente{
+    width:150px;
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+    text-align: center;
+    margin: 0 auto;
+    padding:2rem 0;
+}
+
+.imagen-componente,
+.imagen-testimonio{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--color-fondo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-caja-plan{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--color-fondo-2);
+}
+
+.espacio-video{
+    width:300px;
+    height:175px;
+    background-color: var(--color-fondo-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;  
+}
+
+.info-promocional{
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;   
+    margin:0 auto;
+}
+
+.frecuencia-pago{
+    display: flex;
+}
+
+.planes-empresa{
+    padding:4rem 0;
+}
+
+.caja-plan{    
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.2rem;
+    text-align: center;
+    margin: 0 auto;
+    padding:2rem 0;
+    border:5px solid var(--color-fondo-2);
+    border-radius: 5px;
+}
+
+.imagen-caja-plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:-5rem;
+}
+
+.detalles-caja-plan > h4{
+    font-size: 16pt;
+    margin-bottom: 1rem;
+}
+
+.detalles-caja-plan > p{
+    font-size: 11pt;
+}
+
+.precio-caja-plan{
+    display: flex;
+    flex-direction: column;
+}
+
+.precio-caja-plan > h4{
+    display: flex;
+    justify-content: center;
+    font-size:24pt;
+    margin-bottom:1rem;
+}
+
+.signo-moneda,
+.frecuencia-pago{
+    font-size: 9pt;
+}
+
+.imagen-testimonio > img{
+    max-height: 100%; 
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media(max-width:768px){
+    .fila{
+        flex-direction: column;
+    }
+
+    .info-promocional{
+        text-align: center;
+        padding:2rem 0;
+    }
+    
+    .caja-plan{
+        margin:2rem auto;
+    }
+}
