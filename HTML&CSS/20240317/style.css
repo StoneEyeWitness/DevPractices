@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-fondo-1: rgb(238, 198, 164);
+    --color-fondo-2: rgb(227, 159, 99);
+
+    --color-texto:#1e1e1e;
+
+    --fondo-boton-1: #373636;
+    --texto-boton-1: #e3e3e3;
+
+    --fondo-boton-2: #e3e3e3;
+    --texto-boton-2: #373636;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--color-fondo);
+}
+
+.seccion,
+.pie{
+    padding:2rem 0;
+}
+
+a{
+    text-decoration: none;
+    color:var(--color-texto);
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-flex;
+}
+
+.color-fondo-1{
+    background-color: var(--color-fondo-1);
+}
+
+.color-fondo-2{
+    background-color: var(--color-fondo-2);
+}
+
+.fila{
+    display: flex;
+    align-items: center;
+}
+
+.columna-4{
+    flex-basis: 33.333%;
+}
+
+.columna-6{
+    flex-basis: 50%;
+}
+
+.columna-8{
+    flex-basis: 66.666%;
+}
+
+.flex-espacio-entre{
+    justify-content: space-between;
+}
+
+.flex-centro{
+    justify-content: center;
+}
+
+.flex-columna{
+    flex-direction: column;
+}
+
+.texto-al-centro{
+    text-align: center;
+}
+
+.contenedor{
+    max-width: 95%;
+    margin:0 auto;
+}
+
+.boton{
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.boton-sm{
+    padding:0.5rem 1rem;
+}
+
+.boton-md{
+    padding:1rem 2rem;
+}
+
+.boton-1{
+    background-color: var(--fondo-boton-1);
+    color:var(--texto-boton-1);
+}
+
+.boton-1:hover{
+    background-color: var(--texto-boton-1);
+    color:var(--fondo-boton-1);
+    cursor: pointer;
+}
+
+.boton-2{
+    background-color: var(--fondo-boton-2);
+    color:var(--texto-boton-2);
+}
+
+.boton-2:hover{
+    background-color: var(--texto-boton-2);
+    color:var(--fondo-boton-2);
+    cursor: pointer;
+}
+
+.icono{
+    margin-right:5px;
+}
+
+/* Cabecera y Barra de Navagacion */
+
+.barra-navegacion > ul{
+    display: flex;
+    gap:0.5rem;
+}
+
+.barra-navegacion > ul li{
+    padding:1rem;
+}
+
+.barra-navegacion > ul li:hover{
+    background-color: var(--fondo-boton-2);
+}
+
+.barra-navegacion > ul li a:hover{
+    transform: scale(1.05);
+    font-weight: 500;
+}
+
+/* Seccion de Banner del Producto */
+
+.banner-producto{
+    height:93dvh;
+    padding:1.5rem 0;
+}
+
+.banner-producto .contenedor,
+.banner-producto .contenedor .fila
+{
+    height: 100%;
+}
+
+.banner-producto .contenedor .fila,
+.beneficios-producto .contenedor .fila,
+.registro-producto .contenedor .fila
+{
+    gap:1rem;
+}
+
+.info-empresa{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    align-items: flex-start;
+    max-width: 95%;
+    margin:0 auto;
+}
+
+.info-empresa h2{
+    font-size: 36pt;
+}
+
+.info-empresa p{
+    font-size: 16pt;
+}
+
+.imagen-banner,
+.imagen-escaparate{
+    width:100%;
+    display: flex;
+}
+
+.imagen-banner img,
+.imagen-escaparate img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* Seccion de Empresas Respaldantes */
+
+.empresas-respaldantes > .contenedor > .fila{
+    flex-direction: column;
+    gap:2rem;
+}
+
+.espacio-empresas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width:100%;
+}
+
+.imagen-empresa{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-color: var(--texto-boton-1);
+}
+
+
+.componentes-producto > .contenedor > .fila,
+.beneficios-producto > .contenedor > .fila,
+.testimonios-producto > .contenedor > .fila,
+.planes-producto > .contenedor > .fila{
+    padding:1rem 0;
+}
+
+
+.planes-producto > .contenedor > .fila{
+    gap:1rem;
+}
+
+
+/* Seccion de Componentes del Producto */
+
+.caja-componente{
+    display: flex;
+    gap:1rem;
+    padding:1rem;
+}
+
+.icono-componente,
+.icono-beneficio,
+.imagen-cliente{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: var(--fondo-boton-1);
+}
+
+.icono-beneficio i{
+    color:var(--texto-boton-1);
+}
+
+.desc-componente{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.desc-componente h4{
+    font-size: 16pt;
+}
+
+.desc-componente p{
+    font-size: 12pt;
+}
+
+
+/* Seccion de Escaparates del Producto */
+
+.escaparate-producto > .contenedor > .fila > .columna-6{
+    padding:1rem 0;
+}
+
+.texto-escaparate{
+    max-width: 90%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.texto-escaparate h3{
+    font-size:18pt;
+}
+
+.texto-escaparate p{
+    font-size:14pt;
+}
+
+
+/* Seccion de Beneficios del Producto */
+
+.caja-beneficio > .icono-beneficio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja-beneficio > h4{
+    font-size: 20pt;
+}
+
+.caja-beneficio > p{
+    font-size: 13pt;
+}
+
+/* Seccion de Testimonios del Producto */
+
+.caja-testimonio{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    background-color: var(--color-fondo-1);
+    border-radius: 5px;
+    max-width: 90%;
+    margin:0 auto;
+    padding:1rem;
+}
+
+.cliente-testimonio{
+    display: flex;
+    gap:1rem;
+}
+
+.desc-cliente{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+/* Seccion de Planes del Producto */
+
+.caja-plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    background-color: var(--color-fondo-2);
+    border-radius: 5px;
+    padding:2rem;
+}
+
+.caja-plan > small{
+    font-size:12pt;
+}
+
+.caja-plan > strong{
+    font-size:36pt;
+}
+
+.componentes-plan{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    font-size: 14pt;
+}
+
+.boton-plan{
+    justify-self: flex-end;
+}
+
+/* Seccion de Registro para Uso del Producto */
+
+.formulario-registro{
+    max-width: 50%;
+    min-width: 33.333%;
+    margin:0 auto;
+}
+
+.formulario-registro > form{
+    width: 100%;
+}
+
+.formulario-registro > form > input,
+.formulario-registro > form > button{
+    width: 100%;
+    display: inline-block;
+    padding:1rem;
+}
+
+
+/* Seccion de enlaces del producto */
+
+.enlaces,
+.enlaces ul,
+.correspondencia{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+}
+
+.enlaces ul li{
+    padding:1rem;
+    color:var(--texto-boton-1);
+    background-color: var(--color-texto);
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enlaces ul li:hover{
+    background-color: var(--fondo-boton-2);
+    color:var(--fondo-boton-1);
+}
+
+
+.correspondencia > form{
+    margin: 0;
+    padding: 0;
+}
+.correspondencia > form > input,
+.correspondencia > form > button{
+    padding:1rem;
+    margin: 0;
+    border-radius: 0;
+}
+
+
+
+@media(max-width:768px){
+    .fila{
+        flex-direction: column;
+    }
+
+    .columna-4,
+    .columna-6,
+    .columna-8{
+        padding:1rem;
+    }
+
+    .barra-navegacion > ul li{
+        text-align: center;
+    }
+
+    .formulario-registro{
+        max-width: 95%;
+    }
+
+    .correspondencia{
+        flex-direction: column;
+    }
+
+    .links-sociales-producto > .contenedor > .fila{
+        gap:1.5rem;
+    }
+}
